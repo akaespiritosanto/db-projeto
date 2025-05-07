@@ -1,0 +1,28 @@
+function ids(){
+    var email = "gay@gmail.com";
+    var ids = []
+    for (let j = 0; j < email.length; j++){
+        var id = Math.max(j)
+    }
+    return maxid = id + 1
+}
+
+function testing() {
+    var maxid = ids()
+    var nova = [];
+    var email = "gay@gmail.com";
+
+    for (let i = maxid; i > email.length; i--) {
+        nova.push(email[i]);
+        if (email[i] == "@") {
+            nova.pop()
+            break
+        }
+    }
+    return nova
+}
+
+var x = testing();
+console.log(x)
+
+// inacabado
