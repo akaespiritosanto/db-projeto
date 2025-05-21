@@ -74,7 +74,7 @@ CREATE TABLE user_activity (
   activity_id INT PRIMARY KEY AUTO_INCREMENT,
   user_id INT NOT NULL,
   ad_id INT NOT NULL,
-  activity_type ENUM('favorite', 'saved', 'viewed') NOT NULL,
+  activity_type ENUM('favorite', 'followed', 'viewed') NOT NULL,
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (user_id) REFERENCES users(user_id),
   FOREIGN KEY (ad_id) REFERENCES ads(ad_id)
